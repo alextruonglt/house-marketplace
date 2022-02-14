@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import rentCategoryImage from '../assets/jpg/rentCategoryImage.jpg'
 import sellCategoryImage from '../assets/jpg/sellCategoryImage.jpg'
 import Slider from '../components/Slider'
+import Navbar from '../components/Navbar'
 
 function Explore() {
     return (
@@ -32,6 +33,7 @@ function Explore() {
                     </Link>
                 </div>
             </main>
+            <Navbar />
         </div>
     )
 }

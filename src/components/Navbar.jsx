@@ -6,15 +6,31 @@ import { ReactComponent as PersonOutlineIcon } from "../assets/svg/personOutline
 
 function Navbar() {
 
+
+
+
     const navigate = useNavigate()
     const location = useLocation()
 
     const pathMatchRoute = (route) => {
+
+
         if (route === location.pathname) {
             return true;
         }
+
+
+
+
+
     }
+
+
     return (
+
+
+
+
         <footer className="navbar">
             <nav className="navbarNav">
                 <ul className="navbarListItems" >

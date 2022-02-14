@@ -17,9 +17,11 @@ import Contact from './pages/Contact'
 
 
 function App() {
+
   return (
     <>
       <Router>
+
         <Routes>
           <Route path='/' element={<Explore />} />
           <Route path='/offers' element={<Offers />} />
@@ -39,7 +41,7 @@ function App() {
           <Route path='/contact/:landlordId' element={<Contact />} />
 
         </Routes>
-        <Navbar />
+        {/* <Navbar /> */}
       </Router>
 
       <ToastContainer />

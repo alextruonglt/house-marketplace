@@ -12,6 +12,7 @@ import { db } from '../firebase.config'
 import { toast } from 'react-toastify'
 import Spinner from '../components/Spinner'
 import ListingItem from '../components/ListingItem'
+import Navbar from '../components/Navbar'
 
 function Offers() {
     const [listings, setListings] = useState(null)
@@ -127,8 +128,10 @@ function Offers() {
             ) : (
                 <p>There are no current offers</p>
             )}
+            <Navbar />
         </div>
     )
+
 }
 
 export default Offers

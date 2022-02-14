@@ -12,6 +12,7 @@ import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { v4 as uuidv4 } from 'uuid'
 import Spinner from '../components/Spinner'
+import Navbar from '../components/Navbar'
 
 function CreateListing() {
     // eslint-disable-next-line
@@ -447,6 +448,7 @@ function CreateListing() {
                     </button>
                 </form>
             </main>
+            <Navbar />
         </div>
     )
 }

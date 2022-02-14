@@ -42,7 +42,7 @@ function SignUp() {
 
             const formDataCopy = { ...formData }
 
-            delete formDataCopy.password
+
             formDataCopy.timestamp = serverTimestamp()
 
             await setDoc(doc(db, "users", user.uid), formDataCopy)
@@ -95,7 +95,7 @@ function SignUp() {
                             </button>
                         </div>
                     </form>
-                    <OAuth />
+                    {/* <OAuth /> */}
                     <Link to="/sign-in" className="registerLink">
                         Sign In Instead
                     </Link>
